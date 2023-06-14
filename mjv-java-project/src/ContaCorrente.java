@@ -36,8 +36,7 @@ public class ContaCorrente {
     }
 
     List<Transacao> consultarExtrato(LocalDate di, LocalDate df){
-
-       
+ 
     }
 
 }
