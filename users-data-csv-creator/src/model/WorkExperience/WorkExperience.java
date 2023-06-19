@@ -1,29 +1,23 @@
-package model.WorkExperiences;
+package model.WorkExperience;
 import java.time.LocalDate;
 
 public class WorkExperience {
     
-    private String job;
+    private String experiences;
     private LocalDate hiring;
     private LocalDate resignation;
-    private String description;
-    private Boolean current;
+    private Boolean currentWork;
     private String salary;
 
-    public WorkExperience(String job, LocalDate hiring, 
-        LocalDate resignation, String description, 
-        Boolean current, String salary) {
+    public WorkExperience(String experiences, LocalDate hiring, 
+        LocalDate resignation, 
+        Boolean currentWork, String salary) {
         
-        this.job = job;
+        this.experiences = experiences;
         this.hiring = hiring;
         this.resignation = resignation;
-        this.description = description;
-        this.current = current;
+        this.currentWork = currentWork;
         this.salary = salary;
-    }
-
-    public String getJob() {
-        return job;
     }
 
     public LocalDate getHiring() {
@@ -34,16 +28,16 @@ public class WorkExperience {
         return resignation;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public Boolean getCurrent() {
-        return current;
+    public Boolean getCurrentWork() {
+        return currentWork;
     }
 
      public String getSalary() {
         return salary;
+    }
+
+     public String getExperiences() {
+        return experiences;
     }
 
 }

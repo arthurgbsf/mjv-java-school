@@ -16,7 +16,7 @@ public class User {
     private WorkExperience workExperience;
     private SalaryRange salaryRange;
 
-    public User(Integer id, PersonalData personalData, Address adress, Contact contact,
+    public User(PersonalData personalData, Address adress, Contact contact,
             WorkExperience workExperience, SalaryRange salaryRange) {   
 
         this.id = incrementId;
