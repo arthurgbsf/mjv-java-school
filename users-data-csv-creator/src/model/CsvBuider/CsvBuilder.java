@@ -31,7 +31,7 @@ public class CsvBuilder {
 
         StringBuilder header = new StringBuilder();
         for( String col : cols){  
-            header.append(col + ";");   
+            header.append(col + ",");   
         }
         String headerString = header.toString();
         String trimmedHeader = headerString.substring(0, headerString.length() - 1);
@@ -40,26 +40,26 @@ public class CsvBuilder {
         for( User user : users){
 
             StringBuilder row = new StringBuilder();
-            row.append(user.getId() + ";");
-            row.append(user.getPersonalData().getName() + ";");
-            row.append(user.getPersonalData().getCpf() + ";");
-            row.append(user.getPersonalData().getBirthDate() + ";");
-            row.append(user.getPersonalData().getGender() + ";");
-            row.append(user.getAdress().getStreet() + ";");
-            row.append(user.getAdress().getNumber() + ";");
-            row.append(user.getAdress().getDistrict() + ";");
-            row.append(user.getAdress().getCity() + ";");
-            row.append(user.getAdress().getState() + ";");
-            row.append(user.getAdress().getCountry() + ";");
-            row.append(user.getContact().getPhone() + ";");
-            row.append(user.getContact().getMail() + ";");
-            row.append(user.getContact().getLinkedIn() + ";");
-            row.append(user.getWorkExperience().getExperiences() + ";");
-            row.append(user.getWorkExperience().getCurrentWork() + ";");
-            row.append(user.getWorkExperience().getHiring() + ";");
-            row.append(user.getWorkExperience().getResignation() + ";");
-            row.append(user.getWorkExperience().getSalary() + ";");
-            row.append(user.getSalaryRange().getMin() + ";");
+            row.append(user.getId() + ",");
+            row.append(user.getPersonalData().getName() + ",");
+            row.append(user.getPersonalData().getCpf() + ",");
+            row.append(user.getPersonalData().getBirthDate() + ",");
+            row.append(user.getPersonalData().getGender() + ",");
+            row.append(user.getAdress().getStreet() + ",");
+            row.append(user.getAdress().getNumber() + ",");
+            row.append(user.getAdress().getDistrict() + ",");
+            row.append(user.getAdress().getCity() + ",");
+            row.append(user.getAdress().getState() + ",");
+            row.append(user.getAdress().getCountry() + ",");
+            row.append(user.getContact().getPhone() + ",");
+            row.append(user.getContact().getMail() + ",");
+            row.append(user.getContact().getLinkedIn() + ",");
+            row.append(user.getWorkExperience().getExperiences() + ",");
+            row.append(user.getWorkExperience().getCurrentWork() + ",");
+            row.append(user.getWorkExperience().getHiring() + ",");
+            row.append(user.getWorkExperience().getResignation() + ",");
+            row.append(user.getWorkExperience().getSalary() + ",");
+            row.append(user.getSalaryRange().getMin() + ",");
             row.append(user.getSalaryRange().getMax());
 
             setRows(row.toString());      
