@@ -46,16 +46,16 @@ public class App {
             new PersonalData("Juliana Lima", LocalDate.of(1990, 3, 1), "732.365.580-32", Gender.FEMININE),
             new Address("Rua das Acácias", 567, "Vila Bela", "Vila Bela", "Santa Catarina", "Brasil"),
             new Contact("+55 47 98765-7890","juliana.lima@example.com", "https://www.linkedin.com/in/juliana-lima"),
-            new WorkExperience("Front-end Developer", LocalDate.of(2013, 5, 12), LocalDate.of(2018, 4, 1), false, "R$4000,00"),
-            new SalaryRange("R$3000,00","R$4000,00")
+            new WorkExperience("Front-end Developer", LocalDate.of(2013, 5, 12), LocalDate.of(2018, 4, 1), false, "R$4000"),
+            new SalaryRange("R$3000","R$4000")
         );
 
         User user02 = new User(
             new PersonalData("Maria Silva", LocalDate.of(1985, 8, 12), "123.456.789-00", Gender.FEMININE),
             new Address("Avenida dos Coqueiros", 123, "Centro", "Cidade Nova", "São Paulo", "Brasil"),
             new Contact("+55 11 98765-4321", "maria.silva@example.com", "https://www.linkedin.com/in/maria-silva"),
-            new WorkExperience("Web Designer", LocalDate.of(2008, 9, 20), LocalDate.of(2021, 5, 30), false, "R$6000,00"),
-            new SalaryRange("R$5000,00", "R$8000,00")
+            new WorkExperience("Web Designer", LocalDate.of(2008, 9, 20), LocalDate.of(2021, 5, 30), false, "R$6000"),
+            new SalaryRange("R$5000", "R$8000")
         );
 
         users.add(user01);
