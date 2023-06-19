@@ -33,7 +33,9 @@ public class CsvBuilder {
         for( String col : cols){  
             header.append(col + ";");   
         }
-        setRows(header.toString()); 
+        String headerString = header.toString();
+        String trimmedHeader = headerString.substring(0, headerString.length() - 1);
+        setRows(trimmedHeader);
 
         for( User user : users){
 
@@ -58,7 +60,7 @@ public class CsvBuilder {
             row.append(user.getWorkExperience().getResignation() + ";");
             row.append(user.getWorkExperience().getSalary() + ";");
             row.append(user.getSalaryRange().getMin() + ";");
-            row.append(user.getSalaryRange().getMax() + ";");
+            row.append(user.getSalaryRange().getMax());
 
             setRows(row.toString());      
         }
